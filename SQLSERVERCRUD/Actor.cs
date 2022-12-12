@@ -87,7 +87,7 @@ namespace SQLSERVERCRUD
                 string nombre = dataGridView1.SelectedRows[0].Cells[0].Value + string.Empty;
                 string fechanacimiento = dataGridView1.SelectedRows[0].Cells[1].Value + string.Empty;
                 string tipoContrato = dataGridView1.SelectedRows[0].Cells[2].Value + string.Empty;
-
+                //:D
                 textBox1.Text = nombre;
                 textBox2.Text = fechanacimiento;
                 textBox3.Text = tipoContrato;
