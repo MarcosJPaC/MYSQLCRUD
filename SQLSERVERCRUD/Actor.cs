@@ -79,5 +79,19 @@ namespace SQLSERVERCRUD
             agnt.Show();
            
         }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0) // make sure user select at least 1 row 
+            {
+                string nombre = dataGridView1.SelectedRows[0].Cells[0].Value + string.Empty;
+                string fechanacimiento = dataGridView1.SelectedRows[0].Cells[1].Value + string.Empty;
+                string tipoContrato = dataGridView1.SelectedRows[0].Cells[2].Value + string.Empty;
+
+                textBox1.Text = nombre;
+                textBox2.Text = fechanacimiento;
+                textBox3.Text = tipoContrato;
+            }
+        }
     }
 }
